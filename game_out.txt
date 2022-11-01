@@ -1,0 +1,20 @@
+Acolyte go to 5 longitude and  5 width
+Player take place 5 longitude and  4 width
+Acolyte go to 4 longitude and  5 width
+Player take place 4 longitude and  4 width
+Acolyte go to 3 longitude and  5 width
+Player take place 3 longitude and  4 width
+Acolyte go to 2 longitude and  5 width
+Player take place 2 longitude and  4 width
+You can't move
+Player>> health: 26 / 30 || DT: 0 || DR: 0 || Team ID: 10
+Acolyte Take painfull 4 damage to Player
+Player>> health: 22 / 30 || DT: 0 || DR: 0 || Team ID: 10
+Acolyte Take painfull 4 damage to Player
+Player take place 2 longitude and  4 width
+Acolyte go to 1 longitude and  5 width
+Player take place 1 longitude and  4 width
+Acolyte go to 1 longitude and  4 width
+Player take place 1 longitude and  3 width
+Acolyte go to 1 longitude and  3 width
+VICTORY!
