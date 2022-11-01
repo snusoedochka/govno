@@ -13,7 +13,7 @@ class armor_item : public item_event
 
 	armor_item(size_t dt, double dr);
 
-    virtual const char* getName() const;
+    virtual const std::string getName() const;
 
     //virtual void onUsed(actor& on_who);
     bool isWorn() const;

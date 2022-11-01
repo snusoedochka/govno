@@ -24,7 +24,7 @@ class actor : public cell_object, public observable
 
 	virtual unsigned int getTeamID() const;
 	virtual void setTeamID(unsigned int tid);
-    virtual const char* getName() const;
+    virtual const std::string getName() const;
 
 	// Events
 	virtual void onTurn();

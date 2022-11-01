@@ -14,4 +14,4 @@ skeleton::skeleton()
 	atk_action = new action_shoot_ballistic(1, 5, 3);
 	mv_action = new action_move(2);
 }
-const char* skeleton::getName() const { return "$ke1eton"; }
+const std::string skeleton::getName() const { return "$ke1eton"; }

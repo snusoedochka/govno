@@ -10,7 +10,7 @@ class acolyte : public enemy_event
 
 	acolyte();
 
-    const char* getName() const;
+    std::string const getName();
 };
 
 #endif

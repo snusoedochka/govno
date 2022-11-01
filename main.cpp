@@ -14,4 +14,10 @@ int main()
     win_cond.setPlayer(maingame.getMainPlayer());
     lose_cond.setPlayer(maingame.getMainPlayer());
     maingame.run();
+/*
+    std::ofstream file;
+    file.open("C:/Users/romas/Desktop/new_2-master/text.txt");
+    file << "zhopa\n";
+    file << "kakashka";
+    file.close();*/
 }

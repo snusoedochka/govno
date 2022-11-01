@@ -89,7 +89,9 @@ void game::run()
         //ss << mainplr->getName() << " take place " << cur->get_x() << " longitude and  " << cur->get_y()
         //   << " width";
 //        logger::message(LEVEL_EVENT, ss.str());
-
+        std::string mv = mainplr->getName() + " take place " + std::to_string(cur->get_x()) + " longitude and  "+ std::to_string(cur->get_y()) + " width\n";
+        //mv.append(mainplr->getName() << " take place ")
+        notify(new event_message(mv));
         mainfield_view->display();
 
         std::cout << '\n' << "Where r u ganna be: ";

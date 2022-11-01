@@ -34,6 +34,7 @@ void logger_pool::update(message *message)
             auto temp = lv->send(message);
             if (temp != "") {
                 lg->print(temp);
+
             }
         }
     }
@@ -42,6 +43,8 @@ void logger_pool::update(message *message)
 
 void logger_pool::config()
 {
+    /*file_logger cleaner("C:/Users/romas/Desktop/new_2-master/logger/logs.txt");
+    cleaner.clear();*/
     std::cout << "enter loggers and levels you want to use (1st line - loggers, 2nd line - levels)" << std::endl;
     std::string loggers_, levels_;
     std::getline(std::cin,loggers_);
@@ -49,8 +52,8 @@ void logger_pool::config()
     if (loggers_.find("console") != std::string::npos)
         this->addLogger(new console_logger());
     if (loggers_.find("file") != std::string::npos)
-        this->addLogger(new file_logger("logs.txt"));
-    if (levels_.find("events") != std::string::npos) this->addLevel(new event_logger());
+        this->addLogger(new file_logger("C:/Users/romas/Desktop/new_2-master/logger/logs.txt"));
+    if (levels_.find("event") != std::string::npos) this->addLevel(new event_logger());
     if (levels_.find("game") != std::string::npos) this->addLevel(new game_logger());
-    if (levels_.find("errors") != std::string::npos) this->addLevel(new mistake_logger());
+    if (levels_.find("mistake") != std::string::npos) this->addLevel(new mistake_logger());
 }

@@ -18,7 +18,7 @@ class player : public actor
     void setMaxAP(size_t max_ap);
 	size_t& getAP();
 
-    virtual const char* getName() const;
+    virtual const std::string getName() const;
 
 	// Inventory
 	bool addItemToInventory(item_event* i);

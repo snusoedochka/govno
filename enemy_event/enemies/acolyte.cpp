@@ -15,4 +15,4 @@ acolyte::acolyte()
 	atk_action = new action_shoot_ballistic(4, 3, 1/*20*/);
 	mv_action = new action_move(1.0);
 }
-const char* acolyte::getName() const { return "Acolyte"; }
+const std::string acolyte::getName() { return "Acolyte"; }

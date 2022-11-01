@@ -13,7 +13,7 @@ unsigned int actor::getTeamID() const { return team_id; }
 void actor::setTeamID(unsigned int tid) { this->team_id = tid; }
 void actor::onTurn() {}
 
-const char* actor::getName() const { return "Actor"; }
+const std::string actor::getName() const { return "Actor"; }
 
 bool actor::canMove(cell& to_where)
 {

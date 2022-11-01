@@ -17,7 +17,7 @@ void player::setAP(size_t ap) { this->ap = ap; }
 void player::setMaxAP(size_t max_ap) { this->max_ap = max_ap; }
 size_t& player::getAP() { return ap; }
 
-const char* player::getName() const { return "Player"; }
+const std::string player::getName() const { return "Player"; }
 
 // Inventory
 

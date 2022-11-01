@@ -10,7 +10,7 @@ class skeleton : public enemy_event
 
 	skeleton();
 
-    const char* getName() const;
+    const std::string getName() const;
 };
 
 #endif

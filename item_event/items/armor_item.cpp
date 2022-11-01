@@ -9,7 +9,7 @@ armor_item::armor_item(size_t dt, double dr)
     actions.push_back(new armor_item_wear(*this, dt, dr));
 }
 
-const char* armor_item::getName() const { return "Armor"; }
+const std::string armor_item::getName() const { return "Armor"; }
 
 bool armor_item::isWorn() const { return worn; }
 void armor_item::setWorn(bool _worn) { worn = _worn; }
